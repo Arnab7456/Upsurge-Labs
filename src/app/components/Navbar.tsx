@@ -12,43 +12,45 @@ import { cn } from "../utils/cn";
         <MenuItem setActive={setActive} active={active} item="Services">
           <div className="flex flex-col space-y-4 text-sm">
             <HoveredLink href="/web-dev">Web Development</HoveredLink>
-            <HoveredLink href="/interface-design">Interface Design</HoveredLink>
-            <HoveredLink href="/seo">Search Engine Optimization</HoveredLink>
-            <HoveredLink href="/branding">Branding</HoveredLink>
+            <HoveredLink href="/interface-design">Artificial Intelligence</HoveredLink>
+            <HoveredLink href="/seo">HealthTech Solutions
+            </HoveredLink>
+            <HoveredLink href="/branding">Spacetech Solutions
+            </HoveredLink>
           </div>
         </MenuItem>
         <MenuItem setActive={setActive} active={active} item="Products">
           <div className="  text-sm grid grid-cols-2 gap-10 p-4">
             <ProductItem
-              title="Algochurn"
+              title="Spacetech Solutions"
               href="https://algochurn.com"
               src="https://assets.aceternity.com/demos/algochurn.webp"
-              description="Prepare for tech interviews like never before."
+              description="Pioneering technologies in spacetech, from developing innovative satellite system"
             />
             <ProductItem
-              title="Tailwind Master Kit"
+              title="HealthTech Solutions"
               href="https://tailwindmasterkit.com"
               src="https://assets.aceternity.com/demos/tailwindmasterkit.webp"
-              description="Production ready Tailwind css components for your next project"
+              description="Creating advanced wearable devices that not only monitor health but also actively contribute to improving and personalizing health outcomes for individuals."
             />
             <ProductItem
-              title="Moonbeam"
+              title="Artificial Intelligence"
               href="https://gomoonbeam.com"
               src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.51.31%E2%80%AFPM.png"
-              description="Never write from scratch again. Go from idea to blog in minutes."
+              description="Developing a dynamic AI-powered automation platform that continually evolves"
             />
             <ProductItem
-              title="Rogue"
+              title="Biotechnology"
               href="https://userogue.com"
               src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
-              description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
+              description="Harnessing the power of AI to revolutionize biotech research"
             />
           </div>
         </MenuItem>
-        <MenuItem setActive={setActive} active={active} item="Pricing">
+        <MenuItem setActive={setActive} active={active} item="Labs">
           <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/hobby">Hobby</HoveredLink>
-            <HoveredLink href="/individual">Individual</HoveredLink>
+            <HoveredLink href="https://upsurge.io/residency">Residency</HoveredLink>
+            <HoveredLink href="https://upsurge.io/careers">Careers</HoveredLink>
             <HoveredLink href="/team">Team</HoveredLink>
             <HoveredLink href="/enterprise">Enterprise</HoveredLink>
           </div>

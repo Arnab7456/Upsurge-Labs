@@ -1,11 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import Navbar from "./components/Navbar";
-import { Cards } from "./components/Cards";
-import ScrollCards from "./components/ScrollCards";
-import { Spotlight } from "./components/ui/Spotlight";
-import SparklesPreview from "./components/HomePage";
+
 
 
 const geistSans = localFont({
@@ -34,14 +30,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Navbar />
-        
-        <Spotlight />
-        <SparklesPreview />
-        {/* <HeroPage /> */}
-        {/* <Hero /> */}
-        <ScrollCards />
-        <Cards />
+       
         {children}
       </body>
     </html>

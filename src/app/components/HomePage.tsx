@@ -1,5 +1,8 @@
 "use client";
 import React from "react";
+import { HoverBorderGradient } from "./ui/hover-border-gradient";
+import Link from "next/link";
+import { Cards } from "./Cards";
 
 export default function SparklesPreview() {
   return (
@@ -23,6 +26,19 @@ export default function SparklesPreview() {
         <p className="text-lg md:text-xl text-center mt-4 font-serif px-4">
           At Upsurge Labs, we relentlessly push the boundaries of what’s possible, transforming the future of biotechnology, AI, spacetech, and health tech. Our innovations are not just advancements—they are the catalysts that will redefine how we live, work, and explore tomorrow's possibilities.
         </p>
+
+        {/* Adding HoverBorderGradient with content */}
+        <div className="flex justify-center mt-10">
+          <Link href="/" >
+          <HoverBorderGradient
+            containerClassName="rounded-full"
+            className="px-4 py-2 text-black  bg-yellow-100 "
+          >
+            Check Out Portfolio
+          </HoverBorderGradient>
+          </Link>
+       
+        </div>
 
         {/* Radial Gradient to prevent sharp edges */}
         <div className="absolute inset-0 w-full h-full bg-black [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
