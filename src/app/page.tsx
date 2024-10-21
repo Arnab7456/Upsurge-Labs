@@ -1,4 +1,5 @@
 import { Cards } from "./components/Cards";
+import Footer from "./components/Footer";
 import SparklesPreview from "./components/HomePage";
 import Navbar from "./components/Navbar";
 import ScrollCards from "./components/ScrollCards";
@@ -12,6 +13,7 @@ export default function Home() {
     <SparklesPreview />
     <ScrollCards />
     <Cards />
+    <Footer />
    </div>
   );
 }

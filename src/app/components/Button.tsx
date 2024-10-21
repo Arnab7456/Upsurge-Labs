@@ -10,7 +10,7 @@ export default function HoverBorderGradientDemo() {
         as="button"
         className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2 px-4 py-2"
       >
-        <span>Aceternity</span>
+        <span>Labs</span>
       </HoverBorderGradient>
     </div>
   );
