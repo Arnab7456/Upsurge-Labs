@@ -9,7 +9,7 @@ import Space from "@/app/public/futuristic-time-machine.jpg";
 
 export function Cards() {
   const cards = data.map((card, index) => (
-    <Card key={card.src} card={card} index={index} />
+    <Card key={index} card={card} index={index} />  // Use index as the key
   ));
 
   return (
