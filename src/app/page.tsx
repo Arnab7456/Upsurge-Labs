@@ -1,5 +1,6 @@
 import { Cards } from "./components/Cards";
 import Footer from "./components/Footer";
+import GlobeDemo from "./components/Globe";
 import SparklesPreview from "./components/HomePage";
 import Navbar from "./components/Navbar";
 import ScrollCards from "./components/ScrollCards";
@@ -13,6 +14,7 @@ export default function Home() {
     <SparklesPreview />
     <ScrollCards />
     <Cards />
+    <GlobeDemo />
     <Footer />
    </div>
   );
