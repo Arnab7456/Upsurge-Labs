@@ -7,7 +7,11 @@ const { default: flattenColorPalette } = require("tailwindcss/lib/util/flattenCo
 
 const addVariablesForColors = ({ addBase, theme }: PluginAPI) => {
   const allColors = flattenColorPalette(theme("colors"));
-  const newVars = Object.fromEntries(Object.entries(allColors).map(([key, val]) => [`--${key}`, val]));
+  
+  // Explicitly cast newVars to Record<string, string>
+  const newVars = Object.fromEntries(
+    Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
+  ) as Record<string, string>;
 
   addBase({
     ":root": newVars,
@@ -25,11 +29,11 @@ const config: Config = {
       keyframes: {
         spotlight: {
           "0%": {
-            opacity: 0,
+            opacity: "0",
             transform: "translate(-72%, -62%) scale(0.5)",
           },
           "100%": {
-            opacity: 1,
+            opacity: "1",
             transform: "translate(-50%,-40%) scale(1)",
           },
         },
