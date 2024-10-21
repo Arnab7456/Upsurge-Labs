@@ -13,7 +13,7 @@ import {
 } from "@tabler/icons-react";
 import { cn } from "@/app/utils/cn"; 
 import { AnimatePresence, motion } from "framer-motion";
-import Image, { ImageProps } from "next/image";
+import Image, { ImageProps, StaticImageData } from "next/image";
 import { useOutsideClick } from "@/app/hooks/use-outside-click"; 
 
 interface CarouselProps {
@@ -22,10 +22,10 @@ interface CarouselProps {
 }
 
 type Card = {
-  src: string;
+  src: string | StaticImageData;
   title: string;
   category: string;
-  content: React.ReactNode;
+  content?: string;
 };
 
 export const CarouselContext = createContext<{
