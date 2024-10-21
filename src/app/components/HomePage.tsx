@@ -19,7 +19,7 @@ export default function SparklesPreview() {
         
   <div className=" text-3xl text-center mt-10 font-serif">Innovating the Future: <br />
   Leading the Next Wave of Technology</div>
-  <p className=" text-2xl text-center mt-5 font-serif">At Upsurge Labs, we relentlessly push the boundaries of what’s possible, transforming the future of biotechnology, AI, spacetech, and health tech. Our innovations are not just advancements—they are the catalysts that will redefine how we live, work, and explore tomorrow's possibilities.</p>
+  <p className=" text-2xl text-center mt-5 font-serif">At Upsurge Labs, we relentlessly push the boundaries of what’s possible, transforming the future of biotechnology, AI, spacetech, and health tech. Our innovations are not just advancements—they are the catalysts that will redefine how we live, work, and explore tomorrows possibilities.</p>
   {/* <SparklesCore
           background="transparent"
           minSize={0.4}
